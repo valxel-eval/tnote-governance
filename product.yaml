@@ -20,7 +20,7 @@ runtime:
   observability:
     non_production: shared
     production: tnote-observe
-budget_usd: 50
+budget_usd: 100000   # effectively no $ budget (subscription lane; Matt 2026-11-27)
 # Phase-group shares of a feature's budget (percent, total 100). Documents raised from the 15% default: on the
 # subscription lane the architect's Opus session alone outruns 15% of a $25 feature (vx-eval, 2026-11-27).
 budget_shares:

@@ -23,24 +23,25 @@ runtime:
 budget_usd: 50
 repos: []
 repo_prefix: tnote-
+# Approvers: the sub-accept workspace's groups (the eval org has no GitHub teams; Matt is in every group).
 approvers:
   g1:
-  - valxel-eval/product-owners
+  - group:sub-accept/product
   g2:
-  - valxel-eval/product-owners
+  - group:sub-accept/product
   g3:
-  - valxel-eval/design
+  - group:sub-accept/design
   g4:
-  - valxel-eval/architects
+  - group:sub-accept/architecture
   g5:
-  - valxel-eval/tech-leads
+  - group:sub-accept/architecture
   security:
-  - valxel-eval/security
+  - group:sub-accept/security
   g6:
-  - valxel-eval/release-managers
+  - group:sub-accept/release
   traceability:
-  - valxel-eval/product-owners
-  - valxel-eval/qa
+  - group:sub-accept/product
+  - group:sub-accept/product
 high_risk_paths:
 - src/auth/
 - migrations/

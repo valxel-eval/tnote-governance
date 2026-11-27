@@ -1,0 +1,21 @@
+goals:
+- id: GOAL-TNOTE-1
+  title: The user reliably saves notes when they use the app
+  measure: at least 1 note persisted in at least 80% of sessions, over the first 2
+    weeks after release
+  period: ''
+  metric:
+    source: manual
+    unit: note persisted in at least 80% of sessions, over the first 2
+    direction: up
+    target: 1
+- id: GOAL-TNOTE-2
+  title: The user keeps coming back to the app
+  measure: the user saves notes in at least 3 separate weeks within the first month
+    after release, confirmed with them at day 30
+  period: ''
+  metric:
+    source: manual
+    unit: separate weeks within the first month after release, confirm
+    direction: up
+    target: 3

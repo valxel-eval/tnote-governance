@@ -1,0 +1,46 @@
+# Tiny Notes governance manifest, read by the Valxel SDLC tool.
+# Written from the product brief approved at the product gate; changes are pull requests.
+# Repos are added here as features create them (the product architecture lists them).
+product_id: TNOTE
+name: Tiny Notes
+constitution: constitution.md
+context: context.md
+depends_on: []
+runtime:
+  openchoreo_project: tnote
+  pipeline:
+  - dev
+  - staging
+  - production
+  tier: 3
+  stage: pilot
+  data_planes:
+    non_production: tnote-nonprod
+    production: tnote-prod
+  observability:
+    non_production: shared
+    production: tnote-observe
+budget_usd: 50
+repos: []
+repo_prefix: tnote-
+approvers:
+  g1:
+  - valxel-eval/product-owners
+  g2:
+  - valxel-eval/product-owners
+  g3:
+  - valxel-eval/design
+  g4:
+  - valxel-eval/architects
+  g5:
+  - valxel-eval/tech-leads
+  security:
+  - valxel-eval/security
+  g6:
+  - valxel-eval/release-managers
+  traceability:
+  - valxel-eval/product-owners
+  - valxel-eval/qa
+high_risk_paths:
+- src/auth/
+- migrations/

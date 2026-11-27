@@ -23,25 +23,24 @@ runtime:
 budget_usd: 50
 repos: []
 repo_prefix: tnote-
-# Approvers: the sub-accept workspace's groups (the eval org has no GitHub teams; Matt is in every group).
+# Approvers: elmpp (the eval org has no GitHub teams; product.yaml takes GitHub users/teams only).
 approvers:
   g1:
-  - group:sub-accept/product
+  - elmpp
   g2:
-  - group:sub-accept/product
+  - elmpp
   g3:
-  - group:sub-accept/design
+  - elmpp
   g4:
-  - group:sub-accept/architecture
+  - elmpp
   g5:
-  - group:sub-accept/architecture
+  - elmpp
   security:
-  - group:sub-accept/security
+  - elmpp
   g6:
-  - group:sub-accept/release
+  - elmpp
   traceability:
-  - group:sub-accept/product
-  - group:sub-accept/product
+  - elmpp
 high_risk_paths:
 - src/auth/
 - migrations/
